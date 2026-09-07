@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الإلكترونيات - Tech Store</title>
+    <!-- أيقونات FontAwesome -->
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط التنقل -->
+    <header class="navbar">
+        <div class="logo">تِك <span>ستور</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- قسم العرض الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>أحدث الأجهزة الإلكترونية بأفضل الأسعار</h1>
+            <p>تسوق الهواتف، اللابتوبات، والإكسسوارات الذكية الآن.</p>
+            <a href="#products" class="btn">تصفح المنتجات</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products-section">
+        <h2>أحدث المنتجات</h2>
+        
+        <!-- أزرار التصفية (Filter) -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">الكل</button>
+            <button class="filter-btn" data-category="phones">هواتف</button>
+            <button class="filter-btn" data-category="laptops">لابتوبات</button>
+            <button class="filter-btn" data-category="accessories">إكسسوارات</button>
+        </div>
+
+        <!-- شبكة عرض المنتجات -->
+        <div class="product-grid" id="product-grid">
+            <!-- يتم إضافة المنتجات هنا ديناميكياً باستخدام JS -->
+        </div>
+    </section>
+
+    <!-- سلة التسوق الجانبية -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>سلة التسوق</h3>
+            <span id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- عناصر السلة تُضاف هنا -->
+        </div>
+        <div class="cart-footer">
+            <div class="total">الإجمالي: <span id="cart-total">0</span> $</div>
+            <button class="checkout-btn" onclick="alert('شكراً لإتمام الشراء!')">إتمام الشراء</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
